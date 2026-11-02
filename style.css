@@ -1,0 +1,477 @@
+
+/* =========================================
+   STYLE UMUM HANZZ COFFEE
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #0b132b, #1c3b70, #2563a6);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 30px;
+    color: #243047;
+}
+
+/* Tombol umum */
+.btn {
+    display: inline-block;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 7px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.2s;
+}
+
+/* =========================================
+   HALAMAN INDEX / DAFTAR PRODUK
+   ========================================= */
+
+.page-index .container {
+    max-width: 1500px;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul */
+.page-index h3 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #0b132b, #1c3b70, #2563a6);
+    border-radius: 9px;
+    font-size: 25px;
+}
+
+/* Bagian atas tabel */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+/* Form pencarian */
+.search-box {
+    display: flex;
+    gap: 8px;
+}
+
+.search-box input {
+    width: 350px;
+    max-width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+}
+
+.search-box input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.2);
+}
+
+/* Tombol cari */
+.btn-cari {
+    background-color: #2563eb;
+}
+
+.btn-cari:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+/* Tombol tambah produk */
+.page-index .btn-tambah {
+    background-color: #0b3d70;
+    color: white;
+}
+
+.page-index .btn-tambah:hover {
+    background-color: #2563a6;
+    transform: translateY(-2px);
+}
+
+
+/* Menghilangkan baris baru pada harga */
+td:nth-child(6) br {
+    display: none;
+}
+
+/* Tabel */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-top: 15px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #d7e0ef;
+}
+
+th,
+td {
+    padding: 13px 12px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background: linear-gradient(to right, #14213d, #1c3b70);
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+td {
+    color: #263449;
+    font-size: 14px;
+}
+
+/* Warna baris tabel */
+tbody tr:nth-child(even) {
+    background-color: #f0f5fc;
+}
+
+tbody tr:hover {
+    background-color: #e0edff;
+}
+
+/* Gambar produk */
+td img {
+    width: 90px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Tombol edit */
+.btn-edit {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-edit:hover {
+    background-color: #2176ae;
+}
+
+/* Tombol hapus */
+.btn-hapus {
+    background-color: #e74c3c;
+    color: white;
+}
+
+.btn-hapus:hover {
+    background-color: #c0392b;
+}
+
+/* Jarak tombol aksi */
+td .btn {
+    margin: 3px;
+}
+
+/* TOMBOL LOGOUT */
+.btn-logout {
+    background: linear-gradient(to right, #dc2626, #991b1b);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-logout:hover {
+    background: linear-gradient(to right, #b91c1c, #7f1d1d);
+    transform: translateY(-2px);
+    color: white;
+}
+
+/* =========================================
+   HALAMAN FORM TAMBAH DAN UBAH DATA
+   ========================================= */
+
+.page-form .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+
+/* Kotak form */
+.form-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul form */
+.page-form h1,
+.page-form h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, #14213d, #2563a6);
+    border-radius: 8px;
+}
+
+/* Form group */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+    color: #263449;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+}
+
+/* Kelompok tombol form */
+.button-group {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+/* Tombol tambah pada form */
+.page-form .btn-tambah {
+    background-color: #2563eb;
+}
+
+.page-form .btn-tambah:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tombol ubah */
+.btn-ubah {
+    background-color: #2563eb;
+}
+
+.btn-ubah:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tombol kembali */
+.btn-kembali {
+    background-color: #64748b;
+}
+
+.btn-kembali:hover {
+    background-color: #475569;
+}
+
+/* =========================================
+   PAGINATION
+   ========================================= */
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #f0f5fc;
+    border: 1px solid #dbe5f2;
+    border-radius: 12px;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+/* Tombol pagination */
+.pagination a,
+.pagination-disabled {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 42px;
+    height: 42px;
+    padding: 0 14px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+/* Tombol normal */
+.pagination a {
+    color: #1c3b70;
+    background-color: white;
+    border: 1px solid #d7e0ef;
+}
+
+/* Hover pagination */
+.pagination a:hover {
+    background-color: #2563eb;
+    color: white;
+    border-color: #2563eb;
+    transform: translateY(-2px);
+}
+
+/* Halaman aktif */
+.pagination a.active {
+    background-color: #1c3b70;
+    color: white;
+    border-color: #1c3b70;
+}
+
+/* Tombol sebelumnya dan berikutnya */
+.pagination .prev,
+.pagination .next {
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+/* Pagination tidak aktif */
+.pagination-disabled {
+    color: #9ca3af;
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    cursor: not-allowed;
+}
+
+
+/* =========================================
+   MERAPIKAN TOMBOL AKSI EDIT DAN HAPUS
+   ========================================= */
+
+/* Kolom aksi */
+td:last-child {
+    white-space: nowrap;
+    text-align: center;
+}
+
+/* Menghilangkan baris baru jika ada <br> */
+td:last-child br {
+    display: none;
+}
+
+/* Mengatur tombol edit dan hapus */
+td:last-child .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 75px;
+    padding: 10px 15px;
+    margin: 3px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+/* Tombol edit */
+td:last-child .btn-edit {
+    background-color: #3498db;
+    color: white;
+}
+
+td:last-child .btn-edit:hover {
+    background-color: #2176ae;
+}
+
+/* Tombol hapus */
+td:last-child .btn-hapus {
+    background-color: #e74c3c;
+    color: white;
+}
+
+td:last-child .btn-hapus:hover {
+    background-color: #c0392b;
+}
+
+
+/* =========================================
+   RESPONSIVE
+   ========================================= */
+
+@media (max-width: 768px) {
+
+    body {
+        padding: 12px;
+    }
+
+    .page-index .container,
+    .form-card {
+        padding: 18px;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .page-index .btn-tambah {
+        text-align: center;
+    }
+
+    .page-index .container {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 850px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group .btn {
+        width: 100%;
+    }
+}
